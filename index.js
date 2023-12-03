@@ -7,6 +7,7 @@ import http from "http";
 import invoiceRouter from "./src/routes/invoice-routes.js";
 import businessOwnerRouter from "./src/routes/businessOwner-routes.js";
 import clientRouter from "./src/routes/client-routes.js";
+// import crypto from "crypto"
 
 dotenv.config();
 
@@ -42,6 +43,8 @@ async function connect() {
   }
 }
 connect();
+//const secretkey = crypto.randomBytes(32).toString("hex")
+//console.log(secretkey)
 
   // On the client side, you would listen for the new events like this:
 

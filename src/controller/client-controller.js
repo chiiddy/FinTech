@@ -1,6 +1,10 @@
 import Client from "../models/Client.js";
 import jwt from 'jsonwebtoken';
+import dotenv from "dotenv";
+import { Server as SocketIOServer } from 'socket.io';
 
+const io = new SocketIOServer()
+dotenv.config();
 
 const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY;
 
